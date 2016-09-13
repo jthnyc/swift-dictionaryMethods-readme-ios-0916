@@ -45,7 +45,7 @@ let godfatherFilms = [
 ]
 
 
-// UPDATING KEYS
+// UPDATING KEYS with .updateValue
 
 let result1 = movies.updateValue(godfatherFilms, forKey: "The Godfather")
 let result2 = movies.updateValue(fastAndFuriousFilms, forKey: "The Fast and the Furious")
@@ -64,8 +64,8 @@ if let godfatherMovies = movies["The Godfather"] {
 
 // MODIFYING VALUES
 
-if var films = movies["The Fast and the Furious"] {
-    films.append("Faster! 9")
+if var films = movies ["The Fast and the Furious"] {
+    films.append("Faster!9")
     films.append("THE FASTEST 10")
     
     movies["The Fast and the Furious"] = films
@@ -136,6 +136,7 @@ if emptyDictionary.isEmpty {
 
 let planetNames = Array(planetsAndTheirMoons.keys)
 
+// for listing them out
 for planet in planetsAndTheirMoons.keys {
     print(planet)
 }
@@ -145,6 +146,8 @@ for planet in planetsAndTheirMoons.keys {
 // RETRIEVING VALUES
 
 let allTheMoons = Array(planetsAndTheirMoons.values)
+
+// for listing them out
 
 for numberOfMoons in planetsAndTheirMoons.values {
     print(numberOfMoons)
